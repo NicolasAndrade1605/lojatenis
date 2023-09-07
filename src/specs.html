@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="itens.js">
     <link rel="stylesheet" href="script.js">
-    <title>Loja de Tenis</title>
+    <title>Teach Specs</title>
 </head>
 <body>
+
     <header>
         <a href="index.html" class="logo"><i class='bx bx-fingerprint'></i>SneakerID</a>
+
         <ul class="navegação">
             <li><a href="visionGeral.html" >Visão Geral</a></li>
             <li><a href="specs.html">Teach Specs</a></li>
@@ -34,46 +36,10 @@
             </div>
         </div>
     </header>
+    
+    <section>
 
-    <section class="home">
-        <div class="home-img">
-            <img src="product1.png" class="one">
-        </div>
-
-        <div class="home-text">
-            <h1>Adidas <br> Yezzy</h1>
-            <h5>Yezzy 700 wave runner</h5>
-            <h3>$199,00</h3>
-            <a href="#" class="btn">Shop Now</a>
-        </div>
-        
     </section>
-
-    <div class="main">
-        <div class="row">
-            <li><img src="main1.png" onclick="slider('main1.png')"></li>
-        </div>
-        <div class="row2">
-            <li><img src="main2.png" onclick="slider('main2.png')"></li>
-        </div>
-        <div class="row3">
-            <li><img src="product1.png" onclick="slider('product1.png')"></li>
-        </div>
-    </div>
-
-
-    <script>
-        function slider(anything){
-            document.querySelector('.one') .src = anything;
-        };
-        let menu = document.querySelector ('#menu-icon');
-        let navbar = document.querySelector ('.navbar');
-
-        menu.onclick = () => {
-            menu.classList.toggle ('bx-x');
-            navbar.classList.toggle ('open');
-        }
-    </script>
 
 </body>
 </html>

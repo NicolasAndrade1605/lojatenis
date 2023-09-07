@@ -15,16 +15,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="itens.js">
     <link rel="stylesheet" href="script.js">
-    <title>Loja de Tenis</title>
+    <title>Visão Geral</title>
 </head>
 <body>
+
     <header>
         <a href="index.html" class="logo"><i class='bx bx-fingerprint'></i>SneakerID</a>
+
         <ul class="navegação">
             <li><a href="visionGeral.html" >Visão Geral</a></li>
             <li><a href="specs.html">Teach Specs</a></li>
-            <li><a href="review.html">Reviews</a></li>
-            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
 
         <div class="header-icons">
@@ -34,46 +36,21 @@
             </div>
         </div>
     </header>
-
-    <section class="home">
-        <div class="home-img">
-            <img src="product1.png" class="one">
-        </div>
-
-        <div class="home-text">
-            <h1>Adidas <br> Yezzy</h1>
-            <h5>Yezzy 700 wave runner</h5>
-            <h3>$199,00</h3>
-            <a href="#" class="btn">Shop Now</a>
+    
+    <section class="geral">
+        <div class="geral-logo">
+            <i class='bx bx-fingerprint'>SneakerID</i>
         </div>
         
+        <div class="geral-text">
+            <h2>Na SneakerID, nosso objetivo vai além de simplesmente vender tênis.
+                 Estamos comprometidos em proporcionar uma experiência completa e enriquecedora para todos os amantes do calçado esportivo.
+                Queremos que nossos clientes sintam-se parte de uma comunidade que compartilha sua paixão pelos tênis e que possam expressar sua individualidade por meio dos calçados que escolhem usar.
+                Estamos ansiosos para fazer parte da jornada de cada cliente, ajudando-os a encontrar o par perfeito de tênis que os levará aonde desejam ir.
+                 Junte-se a nós no universo emocionante dos tênis no SneakerID.
+            </h2>
+        </div>
     </section>
-
-    <div class="main">
-        <div class="row">
-            <li><img src="main1.png" onclick="slider('main1.png')"></li>
-        </div>
-        <div class="row2">
-            <li><img src="main2.png" onclick="slider('main2.png')"></li>
-        </div>
-        <div class="row3">
-            <li><img src="product1.png" onclick="slider('product1.png')"></li>
-        </div>
-    </div>
-
-
-    <script>
-        function slider(anything){
-            document.querySelector('.one') .src = anything;
-        };
-        let menu = document.querySelector ('#menu-icon');
-        let navbar = document.querySelector ('.navbar');
-
-        menu.onclick = () => {
-            menu.classList.toggle ('bx-x');
-            navbar.classList.toggle ('open');
-        }
-    </script>
 
 </body>
 </html>
