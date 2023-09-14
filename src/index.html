@@ -30,7 +30,10 @@
         <div class="header-icons">
             <i class='bx bx-cart'></i>
             <div id="menu">
-                <i class='bx bx-menu' ></i>
+                <i class='bx bx-menu' id="botaoMenu"></i>
+                <ul class="login" id="menuLogin">
+                    <a href="../src/container/login.html" class="btn-login">login</a>
+                </ul>
             </div>
         </div>
     </header>
@@ -45,7 +48,7 @@
             <h1>Adidas <br> Yezzy</h1>
             <h5>Yezzy 700 wave runner</h5>
             <h3>$199,00</h3>
-            <a href="#" class="btn">Shop Now</a>
+            <a href="./container/cart-shop.html" class="btn">Shop Now</a>
         </div>
         
     </section>
@@ -76,6 +79,19 @@
             menu.classList.toggle ('bx-x');
             navbar.classList.toggle ('open');
         }
+    </script>
+
+    <script>
+        const botaoMenu = document.getElementById('botaoMenu');
+        const menuLogin = document.getElementById('menuLogin');
+
+        botaoMenu.addEventListener('click', function(){
+            if (menuLogin.style.display === 'none'){
+                menuLogin.style.display = 'block';
+            }else {
+                menuLogin.style.display = 'none';
+            }
+        });
     </script>
 
 </body>
