@@ -24,6 +24,6 @@
   flex-direction: column;
 }
 .linha{
-  display: grid;
+  display: flex;
   
 }
