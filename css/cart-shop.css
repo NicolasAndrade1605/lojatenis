@@ -6,6 +6,9 @@
     user-select: none;
     
 }
+h2{
+    align-items: center;
+}
 
 input[type="text"],
 input[type="number"],
@@ -26,4 +29,28 @@ input[type="radio"]{
 
 input:focus {
     border: solid 1px #2a1c8a;
+}
+#secao-orcamento{
+    text-align: center;
+    padding: 15rem;
+}
+
+#form-orcamento{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #3842d5;
+    max-width: 500px;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    grid-column: 1 / 3;
 }
