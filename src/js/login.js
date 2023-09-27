@@ -1,19 +1,20 @@
-//pegar os valores do formulário
+const form = document.getElementById("form");
+const username = document.getElementById("username");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const passwordConfirmation = document.getElementById("password-confirmation");
 
-let nome = document.querySelector("#nome")
+form.addEventListener("submit", () => {
+    event.preventDefault();
 
-const campoQtde = document.querySelector("#qtde")
-const resultado = document.querySelector("output")
+    checkInputUsername();
+})
 
-campoQtde.addEventListener("change", calcular)
 
-//calcular o preço
+function checkInputUsername(){
+    const usernameValue = username.value;
 
-function calcular(){
-    //R$ 100 por tenis
-   let qtde = campoQtde.value
-   let valor = qtde * 100
-   resultado.innerText = 'R$ ${valor}'
+    if (usernameValue === "") {
+        //msotrar o aviso e mostrar mensagem de erro
+    }
 }
-
-//mostrar o preço
