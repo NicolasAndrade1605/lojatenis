@@ -13,7 +13,6 @@ campoPrazo.addEventListener("input", function () {
     labelPrazo.innerHTML = `Prazo: ${campoPrazo.value} semanas`
     calcular()
 })
-
 campoQtde.addEventListener("change", calcular)
 campoTipo.addEventListener("change", calcular)
 campoLayoutSim.addEventListener("change", calcular)
@@ -32,9 +31,8 @@ function calcular(){
 
     let taxaDeUrgencia = 1 - campoPrazo.value * 0.05
     valor *= 1 + taxaDeUrgencia
-   
+
     resultado.innerText = `R$ ${valor}`
 }
-
 
 // mostrar o preco
