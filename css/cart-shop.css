@@ -6,8 +6,11 @@
     user-select: none;
 }
 
-h2{
+#header-cart{
+    display: flex;
     align-items: center;
+    padding-left: 33%;
+    margin-top: 12%;
 }
 
 input[type="text"],
